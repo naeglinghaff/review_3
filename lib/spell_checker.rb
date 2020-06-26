@@ -1,15 +1,11 @@
-require 'set'
-
 def spell_checker(words)
   dictionary = ["hello", "name"]
-  correctly_spelt = []
+  correct = []
   if words.length > 1
     sentence = words.split(" ")
     sentence.each do | word |
-      dictionary.include?(word) ? correctly_spelt.push(word) : correctly_spelt.push("~#{word}~")
+      dictionary.include?(word) ? correct.push(word) : correct.push("~#{word}~")
     end
-  else
-    sentence = words
   end
-  correctly_spelt.join(" ")
+  correct.join(" ")
 end
