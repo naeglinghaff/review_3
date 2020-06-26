@@ -1,5 +1,5 @@
 def spell_checker(words)
-  dictionary = ["hello", "name"]
+  dictionary = ["hello", "my", "name"]
   correct = []
   if words.length > 1
     sentence = words.split(" ")
