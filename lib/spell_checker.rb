@@ -1,5 +1,7 @@
+require 'set'
+
 def spell_checker(words)
-  dictionary = ["hello", "my", "name", "is", "orange"]
+  dictionary = Set.new(["hello", "my", "name", "is", "orange"])
   correct = []
   if words.length > 1
     sentence = words.split(" ")
