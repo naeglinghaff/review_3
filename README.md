@@ -30,3 +30,5 @@ I chose quite early on - when there were 2 words to check - to implement a dicti
 This made the code scalable later, but it may have been implemented too early as it was not the simplest solution for that particular test. However once the dictionary was in place, it made longer sentences easy to handle - all you had to do was add the correctly spelt words to the dictionary.
 
 I implemented a Set as the structure for my dictionary to make my solution more memory efficient. A Set is a more efficient structure than an array because looking up a value can be done in constant time or O(1). This means that no matter how large your dictionary gets the time it takes to find a value is the same.
+
+The function could be refactored to make it conform to the DRY principle more exactly. 
