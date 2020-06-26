@@ -22,4 +22,8 @@ describe '#spell_checker' do
     expect{ spell_checker("") }.to raise_error
   end
 
+  it 'should be able to handle long strings' do
+    expect(spell_checker("hello my name is oragne")).to eq("hello my name is ~oragne~")
+  end
+
 end
