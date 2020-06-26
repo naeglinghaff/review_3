@@ -6,6 +6,8 @@ def spell_checker(words)
     sentence.each do | word |
       dictionary.include?(word) ? correct.push(word) : correct.push("~#{word}~")
     end
+  elsif words == "" || " "
+    raise StandardError.new "This is an error" 
   end
   correct.join(" ")
 end

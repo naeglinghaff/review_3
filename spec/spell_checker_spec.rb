@@ -17,4 +17,9 @@ describe '#spell_checker' do
   it 'should identify 2 incorrectly spelt words in a sentence' do
     expect(spell_checker("hllo my nmae")).to eq("~hllo~ my ~nmae~")
   end
+
+  it 'should raise an error if given an empty string' do
+    expect{ spell_checker("") }.to raise_error
+  end
+
 end
