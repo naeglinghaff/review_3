@@ -9,4 +9,8 @@ describe '#spell_checker' do
   it 'should identify 1 incorrectly spelt word' do
     expect(spell_checker("hlleo")).to eq("~hlleo~")
   end
+
+  it 'should identity 1 incorrectly spelt word in a sentence' do
+    expect(spell_checker("hello nmae")).to eq("hello ~nmae~")
+  end
 end

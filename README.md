@@ -5,8 +5,8 @@
 | Input       | Output                  |
 |:------------- |:-------------         |
 | "hlleo" | "~hlleo~"|
-| "hello my name is Orange" | "hello my name is Orange" |
-| "hello my nmae is Orange" | "hello my ~nmae~ is Orange" |
+| "hello" | "hello" |
+| "hello nmae" | "hello ~nmae~" |
 | "hlleo my nmae is Orange" | "~hlleo~ my ~nmae~ is Orange" |
 | "" | Error message |
 |" " | Error message |
