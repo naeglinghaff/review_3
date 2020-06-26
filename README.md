@@ -8,6 +8,8 @@
 | "hello my name is Orange" | "hello my name is Orange" |
 | "hello my nmae is Orange" | "hello my ~nmae~ is Orange" |
 | "hlleo my nmae is Orange" | "~hlleo~ my ~nmae~ is Orange" |
+| "" | Error message |
+|" " | Error message |
 
 
 ~

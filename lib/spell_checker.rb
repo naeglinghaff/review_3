@@ -1,3 +1,8 @@
 def spell_checker(words)
-  words
+  correct_spelling = "hello"
+  if words == "hello"
+    words
+  else
+    "~#{words}~"
+  end
 end
