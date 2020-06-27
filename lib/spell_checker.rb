@@ -1,26 +1,26 @@
 require 'set'
 
-def spell_checker(words:)
-  if words.length > 1
-    sentence = format(words: words)
-    corrected = check(sentence: sentence)
-  elsif words == "" || " "
+def spell_checker(sentence:)
+  if sentence.length > 1
+    words = format(sentence: sentence)
+    corrected = check(words: words)
+  elsif sentence == "" || " "
     raise StandardError.new "This is an error"
   end
   corrected.join(" ")
 end
 
 # support routine to split up a sentence
-def format(words:)
-  sentence = words.split(" ")
+def format(sentence:)
+  words = sentence.split(" ")
 end
 
 # support routine to check supplied sentence against a dictionary
 # returns aray of corrected words
-def check(sentence:)
+def check(words:)
   dictionary = Set.new(["hello", "my", "name", "is", "orange"])
   corrected = []
-  sentence.each do | word |
+  words.each do | word |
     dictionary.include?(word) ? corrected.push(word) : corrected.push("~#{word}~")
   end
   corrected
