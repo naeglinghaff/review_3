@@ -1,6 +1,6 @@
 require 'set'
 
-def spell_checker(sentence:)
+def check_spelling(sentence:)
   if sentence.length > 1
     words = format(sentence: sentence)
     corrected = check(words: words)
